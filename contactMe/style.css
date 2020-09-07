@@ -1,0 +1,109 @@
+body {
+    display: grid;
+    grid-template-columns: 5% 50% 45%;
+    grid-template-rows: 5% 15% 30% 30% 20%
+}
+ header {
+     font-size: 1em;
+     grid-row-start: 2;
+     grid-column-start: 2;
+ }
+ h2 {
+     grid-row-start: 3;
+     grid-column-start: 2;
+ }
+ .container {
+     grid-row-start: 4;
+     grid-column-start: 2;
+ }
+ .buttons {
+     grid-row-start: 5;
+     grid-column-start: 2;
+ }
+ form {
+     grid-row-start: 3;
+     grid-column-start: 3;
+ }
+ .WOYM {
+     color: red;
+    font-family: 'Oswald', sans-serif;
+
+ }
+ .LMK {
+    font-family: 'Oswald', sans-serif;
+    margin-left: 3%;
+
+}
+h2 {
+    font-size: 1.4em;
+    font-family: 'Oswald', sans-serif;
+    padding-right: 15%;
+}
+.linkedin{
+    height: 30pt;
+    width: 30pt;
+    background-image: url(./link.jpg);
+    background-size: 100%;
+}
+.github{
+    height: 30pt;
+    width: 30pt;
+    background-image: url(./github.jpg);
+    background-size: 100%;
+}
+.returntohome {
+    grid-row-start: 2;
+    grid-column-start: 3;
+    width: 12%;
+    height: 40%;
+    display: flex;
+    margin-left: 70%;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+@media (max-width:800px) {
+    .container {
+        grid-row-start: 3;
+        grid-column-start: 3;
+    }
+    form {
+        grid-row-start: 4;
+        grid-column-start: 2;
+    }
+    .buttons {
+        grid-row-start: 5;
+        grid-column-start: 3;
+    }
+}
+@media (max-width:450px) {
+    body {
+        grid-template-columns: 5% 85% 10%;
+        grid-template-rows: 3% 10% 14% 10% 60% 5%;
+    }
+    h2 {
+        font-size: 1.1em;
+    }
+    .container {
+        grid-row-start: 4;
+        grid-column-start: 2;
+    }
+    .buttons {
+        grid-row-start: 6;
+        grid-column-start: 2;
+    }
+    form {
+        grid-row-start: 5;
+        grid-column-start: 2;
+        margin-top: auto;
+    }
+    .returntohome {
+        grid-row-start: 2;
+        grid-column-start: 2;
+        text-align: center;
+        margin: auto;
+        margin-right:0%;
+        width: 20%;
+        height: 50%;
+    }
+}
+

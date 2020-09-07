@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Cody B Portfolio</title>
+</head>
+<body>
+    <main id="window">
+        <header class="header">
+            <div class="circle circle1" onclick="closeWindow()"></div>
+            <div class="circle circle2" onclick="minimizeWindow()"></div>
+            <div class="circle circle3" onclick="maximizeWindow()"></div>
+        </header>     
+
+        <div class="myNamecontainer">
+            <h1 class="myName">Cody B's Work</h1>
+        </div>
+
+        <div id="thumbnailContainer">
+            <div class="thumbnails" id="barbershop" onclick=window.open('https://g-geo.github.io/BarberShopSite/')></div>
+            <div class="thumbnails" id="doomguy" onclick=window.open('https://g-geo.github.io/Doom-Guy-Resume/')></div>
+            <div class="thumbnails" id="imagegallery" onclick=window.open('https://g-geo.github.io/Image-Gallery/')></div>
+            <div class="thumbnails" id="contactme" onclick=window.open('https://g-geo.github.io/Contact-Me/')></div>
+            <div class="thumbnails" id="mockup" onclick=window.open('https://g-geo.github.io/Cloned-mock-up/')></div>
+            <div class="thumbnails" id="todo" onclick=window.open('https://g-geo.github.io/filteredTodo/')></div>
+        </div>
+
+    </main>
+
+     <!-- these are used to toggle windows menu when clicked anywhere else on screen-->
+
+     <div id="invisibleElement1" onclick="closeElements()"></div>
+
+    <div id="taskbar">
+        <div class="windowsLogo" onclick="openWindowsMenu()"></div>
+        <div class="chromeLogo" id="chromeLogo" onclick="minimizeWindow()"></div>
+        <div class="chromeLogo2" id="chromeLogo2" onclick="closeWindow()"></div>
+    </div>
+
+    <div id="windowsMenu">
+        <div class="homeButtonContainer allContainers" onclick="window.location.href=('../index.html')">
+            <div class="homeButtonIcon allIcons"></div>
+            <div class="homeButton allButtons">Home</div>
+        </div>
+
+        <div class="myResumeButtonContainer allContainers" onclick="window.location.href=('../myResume/index.html')">
+            <div class="myResumeButtonIcon allIcons"></div>
+            <div class="myResumeButton allButtons">My Resume</div>
+        </div>
+
+        <div class="contactMeButtonContainer allContainers" onclick="window.location.href=('../contactMe/index.html')">
+            <div class="contactMeButtonIcon allIcons"></div>
+            <div class="contactMeButton allButtons">Contact Me</div>
+        </div>
+    </div>
+
+</body>
+</html>
