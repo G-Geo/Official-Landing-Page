@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Cody B Resume</title>
+</head>
+<body>
+    <header class="topHeader">
+        <h1 class="geo">G-Geo</h1>
+        <div class="navBar" onclick="toggleNavMenu()"></div>
+    </header>
+<!-- NAV BAR -->
+    <div class=navMenu id='navMenu'>
+        <div class="homeButtonContainer allContainers" onclick="window.location.href=('../index.html')">
+            <div class="homeButtonIcon navIcons"></div>
+            <div class="homeButton allButtons">Home</div>
+        </div>
+
+        <div class="myResumeButtonContainer allContainers" onclick="window.location.href=('../myPortfolio/index.html')">
+            <div class="myResumeButtonIcon navIcons"></div>
+            <div class="myResumeButton allButtons">My Portfolio</div>
+        </div>
+
+        <div class="contactMeButtonContainer allContainers" onclick="window.location.href=('../contactMe/index.html')">
+            <div class="contactMeButtonIcon navIcons"></div>
+            <div class="contactMeButton allButtons">Contact Me</div>
+        </div>
+    </div>
+<!-- TOP MAIN -->
+    <main class="topMain">
+
+        <div class="upperText">
+            <h3 class="helloText">Hello! This is</h3>
+            <div class="myNameContainer">
+                <h1 class="firstName">Cody</h1>
+                <h1 class="lastName">Blair</h1>
+            </div>
+            <h2 class="whatIDoText">A Full-Stack Developer</h2>
+        </div>
+
+        <div class="lowerText">
+            <p>I am currently studying with Austin Coding Academy here in Austin Texas.
+                I study HTML CSS and Javascript.<br>
+                I am also a massage therapist! Though this site is mostly dedicated to my coding career.<br>
+                I work well in teams, pick new skills quickly, and bring a positive attitude to the table.<br>
+                For further consideration, feel free to contact me via any of the links above or contact info below.
+            </p>
+        </div>
+<!-- SlideShow -->
+        <div name="slide" id="slideshowContainer">
+            <div class="allCodys" id="cody1"></div>
+            <div class="allCodys" id="cody2"></div>
+            <div class="allCodys" id="cody3"></div>
+            <div class="allCodys" id="cody4"></div>
+        </div>
+    </main>
+
+  <!-- LOWER MAIN -->
+
+    <main class="lowerMain">
+
+        <div class="phoneIcon allIcons"></div>
+
+        <div class="phoneNumberContainer">
+            <h2 class="phoneText boldText">Phone Number</h2>     
+            <h2 class="number">512-750-3035</h2>
+        </div>
+
+        <div class="locationIcon allIcons"></div>
+
+        <div class="userAddressContainer">
+            <h2 class="userAddressText boldText">Current Location</h2>
+            <h2 class="address">78745 Austin TX <br> United States</h2>
+        </div>
+
+        <div class="emailIcon"></div>
+
+        <div class="emailContainer allIcons">
+            <h2 class="emailText boldText">E-mail Address</h2>
+            <h2 class="email">cb.rialbc@gmail.com <br> rialbc@hotmail.com</h2>
+        </div>
+    </main>
+ 
+</body>
+</html>

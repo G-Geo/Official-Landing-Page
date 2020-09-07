@@ -1,0 +1,623 @@
+html {
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lobster', cursive;
+    background-color: rgba(3, 3, 14, 0.863);
+    color: whitesmoke;
+    height: 1860px;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.animWrapper{
+    position: absolute;
+    width: 105%;
+    height: 1260px;
+    margin-left: -2%;
+    background-image: url(./images/underwater.jpg);
+    background-size: cover;
+    z-index: 1;
+    transform: translateZ(.5px) scale(.5);
+}
+
+/*Fish*/
+
+.fish {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: 70%;
+    background-image: url(./images/fish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fish 75s ease infinite;
+    opacity: 0;
+    animation-delay: 5s;
+}
+
+@keyframes fish {
+    0%{
+        transform: translateX(0vw) rotate(0);
+        opacity: 0;
+    }
+    5%{
+        transform: translateX(10vw) rotate(0);
+        opacity: .5;
+    }
+
+    90%{
+        transform: translateX(80vw) rotate(0);
+        opacity: .2;
+    }
+    95%{
+        transform: translateX(100vw) rotate(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(100vw) rotate(0);
+        opacity: 0;
+    }
+}
+
+.fish2 {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    top: 40%;
+    left: 90%;
+    background-image: url(./images/fish2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: fish2 75s ease infinite;
+    opacity: 0;
+    transform: scaleX(-1);
+    animation-delay: 15s;
+    
+}
+
+@keyframes fish2 {
+    0%{
+        transform: scaleX(-1) translateX(0vw) rotate(0) ;;
+        opacity: 0;
+    }
+    5%{
+        transform: scaleX(-1) translateX(10vw) rotate(0) ;
+        opacity: .5;
+    }
+
+    95%{
+        transform: scaleX(-1) translateX(80vw) rotate(0);
+        opacity: .2;
+    }
+    100%{
+        transform: scaleX(-1) translateX(100vw) rotate(0);
+        opacity: 0;
+    }
+}
+/*End Fish*/
+
+/* BUBBLES */
+.box div{
+    position: absolute;
+    width: 59px;
+    height: 62px;
+    background-color: rgba(2, 217, 255, 0.329);
+    border-radius: 100%;
+    border: 1px solid rgba(2, 61, 255, 0.267);
+}
+.box div:nth-child(1) {
+    top: 12%;
+    left: 35%;
+    animation: animate 21s linear infinite;
+}
+.box div:nth-child(2) {
+    top: 72%;
+    left: 28%;
+    animation: animate 18s linear infinite;
+}
+.box div:nth-child(3) {
+    top: 20%;
+    left: 75%;
+    animation: animate 20s linear infinite;
+}
+.box div:nth-child(4) {
+    top: 50%;
+    left: 58%;
+    animation: animate 15s linear infinite;
+}
+.box div:nth-child(5) {
+    top: 40%;
+    left: 12%;
+    animation: animate 14s linear infinite;
+}
+.box div:nth-child(6) {
+    top: 82%;
+    left: 82%;
+    animation: animate 13s linear infinite;
+}
+.box div:nth-child(7) {
+    top: 45%;
+    left: 88%;
+    animation: animate 12s linear infinite;
+}
+.box div:nth-child(8) {
+    top: 5%;
+    left: 5%;
+    animation: animate 11s linear infinite;
+}
+.box div:nth-child(9) {
+    top: 85%;
+    left: 5%;
+    animation: animate 10s linear infinite;
+}
+.box div:nth-child(10) {
+    top: 82%;
+    left: 48%;
+    animation: animate 9s linear infinite;
+}
+
+@keyframes animate{
+    0% {
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.3) translateY(-140px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Main Text*/
+
+.topTextContainer {
+    z-index: 2;
+    font-family: 'Caveat', cursive;
+    position: absolute;
+    font-size: 22px;
+    margin-top: 320px;
+    width: 99vw;
+}
+.myName {
+    display: flex;
+    justify-content: center;
+}
+
+.topHr{
+    width: 250px;
+}
+.myText {
+    display: flex;
+    justify-content: center;
+}
+
+/* MAIN ARTICLE*/
+
+.mainArticle {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 0% 60% 40%;
+    grid-template-rows: 10% 35% 55%;
+    margin-top: 240px;
+    z-index: -1;
+    transform: translateZ(-1px) scale(2);
+}
+
+.codyContainer {
+    grid-row: 1;
+    grid-column: 3;
+    display: flex;
+}
+.cody {
+    width: 400px;
+    height: 400px;
+    background: url(./images/cody2.png);
+    background-size: contain;
+    background-repeat: no-repeat; 
+}
+
+.heyThere {
+    grid-row: 1;
+    grid-column: 3;
+    height: 150px;
+    background-image: url(./images/hey.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+   margin-top: 40px;
+   margin-left: 280px;
+}
+
+.aboutMeContainer {  
+    grid-row: 1;
+    grid-column: 2;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.aboutMeP {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 50pt;
+    grid-row: 2;
+    grid-column: 2;
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+.aboutMe{
+   font-size: 1.5em;
+
+}
+
+
+/* SAND AND BUTTONS*/
+
+.footer {
+    background-image: url(./images/sand1.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    transform: translateZ(-1.5px) scale(2);
+    position: absolute;
+    z-index: 1;
+    width: 130%;
+    margin-top: 84vh;
+    margin-left: -15%;
+    height: 130px;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+}
+
+.footerbuttons{
+    background-image: url(./images/seashell1.png);
+    margin-top: -15px;
+    height: 150px;
+    width: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.footerbuttons:hover{
+    cursor: pointer;
+    transform: translateY(-20px);
+}
+
+.buttontext{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: rgb(69, 101, 161);
+    font-size: 1.5em;
+}
+
+/* BOTTOM BACKGROUND */
+.hidden {
+    background-color: rgb(8, 25, 56);
+    transform: translateZ(-4px) scale(9.5);
+    position: absolute;
+    z-index: 1-1;
+    width: 60vw;
+    margin-top: 1270px;
+    height: 188px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+/* CRAB ANIM */
+.crab{
+    background-image: url(./images/crab.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 30px;
+    animation: craby 25s linear infinite;
+}
+
+@keyframes craby {
+    0%{
+        transform: translateX(-5vw) rotate(0);
+        -webkit-backface-visibility: hidden;
+        -webkit-transform: translateZ(0) scale(1.0, 1.0);
+      
+
+    }
+    5%{
+        transform: translateX(5vw) rotate(2deg);
+    
+    }
+    10%{
+        transform: translateX(10vw) rotate(-2deg);
+    
+    }
+    15%{
+        transform: translateX(15vw) rotate(2deg);
+
+    }
+    20%{
+        transform: translateX(20vw) rotate(-2deg);
+    
+    }
+    25%{
+        transform: translateX(25vw) rotate(2deg);
+    
+    }
+    30%{
+        transform: translateX(30vw) rotate(-2deg);
+    
+    }
+    35%{
+        transform: translateX(35vw) rotate(2deg);
+    
+    }
+    40%{
+        transform: translateX(40vw) rotate(-2deg);
+    
+    }
+    90%{
+        transform: translateX(90vw) rotate(6deg);
+    
+    }
+    100% {
+        transform: translateX(100vw) rotate(0);
+    }
+}
+
+/* ADDED HEIGHT MEDIA QUERIES TO DEAL WITH PARALLAXING PROBLEMS */
+
+@media (max-width:900px) {
+    .heyThere{
+        display: none;
+    }
+
+    /* height media query */
+    @media (max-height:700px) {
+        .myName{
+            margin-top: -80px;
+        }
+       .footer {
+           margin-top: 70vh;
+       }
+       .animWrapper{
+           height: 1200px;
+       }
+       .mainArticle {
+           margin-top: 0px;
+           z-index: -1;
+           transform: translateZ(-1px) scale(2);
+       }
+       .aboutMeContainer {  
+           margin-top: -20px;
+       }
+       .aboutMeP {
+           margin-left: -35px;
+           font-size: .8em;
+           margin-top: 0px;
+           grid-column-start: 2;
+           grid-column-end: 4;
+       }
+       .codyContainer {
+           display: none;
+       }
+    }
+   
+    @media (max-height:600px) {
+       .footer {
+           margin-top: 55vh;
+       }
+       .aboutMeContainer {  
+           margin-top: -50px;
+       }
+   
+       .aboutMeP {
+           margin-top: -30px;
+       }
+    }
+    /* height media query end */
+}
+@media (max-width:860px) {
+    .animWrapper{
+        width: 105%;
+        height: 1260px;
+        margin-left: -2%;
+    }
+    .footer {
+        margin-top: 96vh;
+    }
+    .crab{
+        margin-top: 60px;
+    }
+    .aboutMeP {
+        margin-left: -20px;
+        font-size: 1em;
+    }
+ /* height media query */
+ @media (max-height:700px) {
+    .myName{
+        margin-top: -80px;
+    }
+   .footer {
+       margin-top: 70vh;
+   }
+   .animWrapper{
+       height: 1200px;
+   }
+   .mainArticle {
+       margin-top: 0px;
+       z-index: -1;
+       transform: translateZ(-1px) scale(2);
+   }
+   .aboutMeContainer {  
+       margin-top: -20px;
+   }
+   .aboutMeP {
+       margin-left: -35px;
+       font-size: .9em;
+       margin-top: 0px;
+       grid-column-start: 2;
+       grid-column-end: 4;
+   }
+   .codyContainer {
+       display: none;
+   }
+}
+
+@media (max-height:600px) {
+   .footer {
+       margin-top: 55vh;
+   }
+   .aboutMeContainer {  
+       margin-top: -50px;
+   }
+
+   .aboutMeP {
+       margin-top: -30px;
+   }
+}
+/* height media query end */    
+}
+
+@media (max-width:620px) {
+    .aboutMeP {
+        margin-left: -20px;
+        font-size: .9em;
+    }
+     /* height media query */
+     @media (max-height:700px) {
+        .myName{
+            margin-top: -80px;
+        }
+       .footer {
+           margin-top: 70vh;
+       }
+       .animWrapper{
+           height: 1200px;
+       }
+       .mainArticle {
+           margin-top: 0px;
+           z-index: -1;
+           transform: translateZ(-1px) scale(2);
+       }
+       .aboutMeContainer {  
+           margin-top: -20px;
+       }
+       .aboutMeP {
+           margin-left: -35px;
+           font-size: .8em;
+           margin-top: 0px;
+           grid-column-start: 2;
+           grid-column-end: 4;
+       }
+       .codyContainer {
+           display: none;
+       }
+    }
+   
+    @media (max-height:600px) {
+       .footer {
+           margin-top: 55vh;
+       }
+       .aboutMeContainer {  
+           margin-top: -50px;
+       }
+   
+       .aboutMeP {
+           margin-top: -30px;
+       }
+    }
+    /* height media query end */
+}
+@media (max-width:420px) {
+    .mainArticle {
+        grid-template-columns: 0% 50% 45%;
+        grid-template-rows: 10% 35% 55%;
+        margin-top: 50px;
+        z-index: -1;
+        transform: translateZ(-1px) scale(2);
+    }
+    .cody {
+        width: 300px;
+        height: 300px;
+    }
+
+    .aboutMeContainer {  
+        margin-top: 140px;
+        margin-left: -20px;
+    }
+    .aboutMeP {
+        margin-left: -20px;
+        font-size: .8em;
+        margin-top: 140px;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+ }
+
+ @media (max-height:700px) {
+     .myName{
+         margin-top: -80px;
+     }
+    .footer {
+        margin-top: 70vh;
+    }
+    .animWrapper{
+        height: 1200px;
+    }
+    .mainArticle {
+        margin-top: 0px;
+        z-index: -1;
+        transform: translateZ(-1px) scale(2);
+    }
+    .aboutMeContainer {  
+        margin-top: -20px;
+    }
+    .aboutMeP {
+        margin-left: -35px;
+        font-size: .8em;
+        margin-top: 0px;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    .codyContainer {
+        display: none;
+    }
+ }
+
+ @media (max-height:600px) {
+    .footer {
+        margin-top: 55vh;
+    }
+    .aboutMeContainer {  
+        margin-top: -50px;
+    }
+
+    .aboutMeP {
+        margin-top: -30px;
+    }
+    
+ }
+ @media (max-height:500px) {
+    .footer {
+        margin-top: 20vh;
+    }
+    .aboutMeContainer {  
+        margin-top: -50px;
+    }
+
+    .aboutMeP {
+        margin-top: -30px;
+    }
+ }

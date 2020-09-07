@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+    <body>
+    <header>
+        <p class="WOYM"> What's on your mind?</p>
+        <p class="LMK">Let me know!</p>
+    </header>
+    <button class="returntohome" onclick="window.location.href=('../index.html')">Return Home</button>
+    <h2>Feel free to get in touch with me, or just let me know what you think. <br>
+        I check my messages regularly, and am available during the weekdays to chat.
+    </h2>
+    <div class=container>
+    <h3>My work e-mail</h3>
+    <p>cb.rialbc@gmail.com</p>
+    <h3>My work number</h3>
+    <p>512-750-3035</p>
+    </div>
+    <div class="buttons">
+        <button class="linkedin" onclick="window.location.href=('../index.html')"></button>
+        <button class="github" onclick="window.location.href='https://github.com/G-Geo';"></button>
+    </div>
+    <form action="results.html" method="GET">
+        <div class="tophalf">
+            <h4>Name:</h4>
+            <label for="first">First</label>
+            <input type="text" id="first" name="name" placeholder="First Name"><br>
+            <label for="last">Last</label>
+            <input type="text" id="last" name="name" placeholder="Last Name">
+        </div>
+        <div>
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+        </div>
+        <div>
+            <h4>Select a date for us to schedule a chat.</h4>
+            <input type="date" name="birthdate" id="birthdate">
+        </div>
+        
+        <div class="bottomhalf">
+        <h4>How did you hear about me?</h4>
+        <input type="checkbox" id="Classmate" name="Classmate"></input>
+        <label for="checkbox">Classmate</label><br>
+        <input type="checkbox" id="Resume Submission" name="Resume Submission"></input>
+        <label for="checkbox">Resume Submission</label><br>
+        <input type="checkbox" id="Linkedin" name="Linkedin"></input>
+        <label for="checkbox">Linkedin</label><br>
+        <input type="checkbox" id="Coding Academy Rec" name="Coding Academy Rec"></input>
+        <label for="checkbox">Coding Academy Rec</label><br><br>
+        </div>
+
+        <div class="bottomhalf">
+        <label for="y/n" class=WYLTBC>Would you like to be contacted?</label><br><br>
+        <input type="radio" id="yes" name="y/n" value="Yes Please!">
+        <label for="yes">Yes Please!</label>
+        <input type="radio" id="no" name="y/n" value="No Way!!">
+        <label for="no">No Way!!</label><br>
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>
